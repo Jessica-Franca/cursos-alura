@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout de Título</title>
+<style>
+  .container {
+    display: flex; /* Usa flexbox para posicionar os itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: #000; /* Cor de fundo preto */
+    color: #fff; /* Texto em cor branca */
+    font-family: sans-serif; /* Fonte genérica */
+    padding: 20px; /* Espaço interno */
+  }
+
+  .vertical-text {
+    writing-mode: vertical-lr; /* Posiciona o texto na vertical */
+    transform: rotate(180deg); /* Gira o texto */
+    margin-right: 10px; /* Espaço à direita do texto vertical */
+    font-size: 0.8em; /* Tamanho menor do texto vertical */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    margin-right: 0;
+  }
+
+  .title {
+    font-size: 2.5em; /* Tamanho maior do texto horizontal */
+    margin: 0; /* Sem margens */
+    padding: 0; /* Sem padding */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="vertical-text">store</div>
+  <h1 class="title">Bodega</h1>
+</div>
+
+</body>
+</html>

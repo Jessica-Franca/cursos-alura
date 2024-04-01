@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-titulo: "Poppins", sans-serif;
+    --cor-primaria: #FFFFFF;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    background-image: url('../assets/ImgPrinc3x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.pageLogin{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 69px;
+}
+
+.conteudo1{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo1__titulo{
+    font-family: var(--font-titulo);
+    color: var(--cor-primaria);
+    font-weight: 400;
+    font-size: 46.78;
+}
+.conteudo1__texto{
+    font-family: var(--font-titulo);
+    color: var(--cor-primaria);
+    font-weight: 300;
+    font-size: 43.31;
+}
+.conteudo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(35px); /* Efeito de desfoque aplicado ao fundo */
+    border-radius: 14px; /* Bordas arredondadas */
+    border: solid 1px;
+    box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.5), /* Borda interna clara */
+    0 0 8px 2px rgba(255, 255, 255, 0); /* Brilho externo para efeito espelhado */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo2__parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo2__parte1__vertical-text {
+    color: var(--cor-primaria);
+    font-family: var(--font-titulo);
+    writing-mode: vertical-lr; /* Posiciona o texto na vertical */
+    transform: rotate(180deg); /* Gira o texto */
+    margin-right: 10px; /* Espaço à direita do texto vertical */
+    font-size: 0.8em; /* Tamanho menor do texto vertical */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+    margin-right: 0;
+  }
+
+.conteudo2__parte1__titulo{
+    font-family: var(--font-titulo);
+    color: var(--cor-primaria);
+    font-size: 2.5em; /* Tamanho maior do texto horizontal */
+    margin: 0; /* Sem margens */
+    padding: 0; /* Sem padding */
+}
